@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nosir va Guli — To'y taklifnomasi</title>
+<meta name="description" content="Sizni nikoh to'yimizga taklif etamiz">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nosir va Guli — To'y taklifnomasi">
+<meta property="og:description" content="17-aprel, 18:00 · Sizni aziz mehmonimiz bo'lishga taklif etamiz 🤍">
+<meta property="og:image" content="https://serene-torte-6577a6.netlify.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ====== SOZLAMA: har buyurtmada faqat pastdagi TAKLIF obyektini o'zgartiring ====== */
+:root{
+  --bg:#f6f0e4; --paper:#fbf7ef; --ink:#2a2520; --muted:#6f655a;
+  --gold:#a98236; --gold-soft:#d9c08a; --green:#1d4a3c; --green-2:#2c6352;
+  --line:rgba(169,130,54,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden;height:100vh}
+.wrap{max-width:460px;margin:0 auto;background:var(--paper);min-height:100vh;position:relative;box-shadow:0 0 60px rgba(42,37,32,.08)}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.script{font-family:"Great Vibes",cursive;font-weight:400}
+section{padding:64px 28px;text-align:center;position:relative}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:34px;line-height:1.15;color:var(--green);margin:10px 0 18px}
+p.lead{color:var(--muted);font-size:16px}
+.divider{width:120px;height:18px;margin:22px auto;display:block}
+
+/* ---- Konvert (ochilish ekrani) ---- */
+#cover{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:var(--green);transition:opacity .9s ease, visibility .9s}
+#cover.gone{opacity:0;visibility:hidden}
+#cover .pattern{position:absolute;inset:0;opacity:.13}
+.cover-card{position:relative;width:min(86vw,380px);padding:48px 28px 40px;border:1px solid var(--gold-soft);border-radius:200px 200px 18px 18px;text-align:center;color:#f3e9d2;background:rgba(0,0,0,.12)}
+.cover-card .eyebrow{color:var(--gold-soft)}
+.cover-names{font-size:56px;line-height:1.05;margin:18px 0 8px;color:#f6e7c4}
+.cover-date{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.2em;color:var(--gold-soft)}
+.btn-open{margin-top:30px;border:0;cursor:pointer;background:linear-gradient(180deg,#e2c98f,#b8913f);color:#1c3a30;font:600 15px Manrope,sans-serif;letter-spacing:.06em;padding:15px 30px;border-radius:40px;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:pulse 2.4s ease-in-out infinite}
+.cover-hint{margin-top:14px;font-size:12px;color:rgba(243,233,210,.6)}
+@keyframes pulse{50%{transform:scale(1.04)}}
+
+/* ---- Bosh qism ---- */
+.hero{padding-top:84px;overflow:hidden}
+.arch{width:250px;margin:0 auto 26px;aspect-ratio:3/4;border-radius:130px 130px 10px 10px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(120% 80% at 50% 0%,#fff 0%,var(--paper) 70%)}
+.names{font-size:64px;line-height:1;color:var(--green)}
+.amp{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;color:var(--gold);margin:4px 0}
+.date-big{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.22em;color:var(--ink);margin-top:18px}
+.greet{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.5;color:var(--ink);max-width:340px;margin:0 auto}
+.from{margin-top:16px;font-size:14px;color:var(--muted)}
+
+/* ---- Sanagacha ---- */
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px}
+.cell{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 4px}
+.cell b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:600;color:var(--green);line-height:1.1;font-variant-numeric:tabular-nums}
+.cell span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.passed{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--green)}
+
+/* ---- Dastur ---- */
+.timeline{text-align:left;max-width:320px;margin:10px auto 0;position:relative}
+.timeline:before{content:"";position:absolute;left:62px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl{display:flex;gap:24px;padding:12px 0;align-items:flex-start}
+.tl time{width:50px;flex:none;font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;color:var(--gold);text-align:right}
+.tl div{position:relative;padding-left:14px}
+.tl div:before{content:"";position:absolute;left:-17px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:1.5px solid var(--gold)}
+.tl strong{display:block;font-weight:600;font-size:16px}
+.tl small{color:var(--muted);font-size:14px}
+
+/* ---- Manzil ---- */
+.place{background:var(--green);color:#f3e9d2}
+.place h2{color:#f6e7c4}
+.place .eyebrow{color:var(--gold-soft)}
+.place .addr{color:rgba(243,233,210,.8);margin-bottom:24px}
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:40px;font:600 14px Manrope,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(180deg,#e2c98f,#b8913f);color:#1c3a30}
+.btn-line{border-color:var(--gold-soft);color:#f3e9d2;background:transparent}
+
+/* ---- Javob (RSVP) ---- */
+.form{max-width:340px;margin:8px auto 0;text-align:left}
+.form label{display:block;font-size:13px;color:var(--muted);margin:14px 0 6px}
+.form input,.form select{width:100%;height:50px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;font:500 16px Manrope,sans-serif;color:var(--ink)}
+.form input:focus,.form select:focus{outline:2px solid var(--gold-soft);border-color:var(--gold)}
+.rsvp-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.btn-yes{background:var(--green);color:#f6e7c4}
+.btn-no{border-color:var(--line);color:var(--ink);background:#fff}
+.err{color:#a23b2a;font-size:13px;margin-top:8px;min-height:18px}
+.thanks{display:none;max-width:340px;margin:0 auto}
+.thanks.show{display:block;animation:fade .6s ease}
+.thanks .big{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--green);line-height:1.25}
+.promo{margin-top:26px;padding:20px;border-radius:16px;background:#fff;border:1px dashed var(--gold);text-align:center}
+.promo b{display:block;font-size:15px;margin-bottom:4px}
+.promo p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.promo .btn{background:var(--gold);color:#fff}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+
+/* ---- Pastki belgi ---- */
+.badge{padding:30px 24px 96px;text-align:center;border-top:1px solid var(--line)}
+.badge a{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:12px 18px;border-radius:40px;font-size:14px}
+.badge a b{color:var(--green)}
+.badge small{display:block;margin-top:10px;font-size:12px;color:var(--muted)}
+
+/* ---- Musiqa tugmasi ---- */
+#music{position:fixed;right:max(16px,calc(50vw - 214px));bottom:18px;z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold-soft);background:var(--green);color:#f6e7c4;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+#music.on svg{animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---- Paydo bo'lish ---- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn-open,#music.on svg{animation:none}}
+</style>
+</head>
+<body class="locked">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="girih" width="60" height="60" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#e2c98f" stroke-width="1">
+        <path d="M30 4 L37 23 L56 30 L37 37 L30 56 L23 37 L4 30 L23 23 Z"/>
+        <rect x="19" y="19" width="22" height="22" transform="rotate(45 30 30)"/>
+        <circle cx="30" cy="30" r="4"/>
+        <path d="M0 0 L8 8 M60 0 L52 8 M0 60 L8 52 M60 60 L52 52"/>
+      </g>
+    </pattern>
+    <symbol id="orn" viewBox="0 0 120 18">
+      <g fill="none" stroke="#a98236" stroke-width="1">
+        <path d="M0 9 H44 M76 9 H120"/>
+        <path d="M60 1 L68 9 L60 17 L52 9 Z"/>
+        <circle cx="60" cy="9" r="2.2" fill="#a98236"/>
+        <circle cx="47" cy="9" r="1.6" fill="#a98236"/><circle cx="73" cy="9" r="1.6" fill="#a98236"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Ochilish ekrani -->
+<div id="cover" role="dialog" aria-label="Taklifnomani ochish">
+  <svg class="pattern" width="100%" height="100%" aria-hidden="true"><rect width="100%" height="100%" fill="url(#girih)"/></svg>
+  <div class="cover-card">
+    <div class="eyebrow" id="c-tur">Nikoh to'yi taklifnomasi</div>
+    <div class="cover-names script" id="c-names"></div>
+    <div class="cover-date" id="c-date"></div>
+    <button class="btn-open" id="open">Taklifnomani ochish</button>
+    <div class="cover-hint">🎵 musiqa bilan ochiladi</div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="hero reveal">
+    <div class="arch">
+      <div class="names script" id="n1"></div>
+      <div class="amp" id="amp">va</div>
+      <div class="names script" id="n2"></div>
+      <div class="date-big" id="d-big"></div>
+    </div>
+    <svg class="divider"><use href="#orn"/></svg>
+    <p class="greet" id="greet"></p>
+    <p class="from" id="from"></p>
+  </section>
+
+  <section class="reveal" style="padding-top:20px">
+    <div class="eyebrow" id="c-left">To'ygacha qoldi</div>
+    <h2 id="weekday"></h2>
+    <div class="count" id="count">
+      <div class="cell"><b id="cd-d">0</b><span>kun</span></div>
+      <div class="cell"><b id="cd-h">0</b><span>soat</span></div>
+      <div class="cell"><b id="cd-m">0</b><span>daqiqa</span></div>
+      <div class="cell"><b id="cd-s">0</b><span>soniya</span></div>
+    </div>
+  </section>
+
+  <section class="reveal" id="dastur-sec" style="padding-top:20px">
+    <div class="eyebrow">Kun tartibi</div>
+    <h2>Bayram dasturi</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="place reveal">
+    <div class="eyebrow">Manzil</div>
+    <h2 id="venue"></h2>
+    <p class="addr" id="addr"></p>
+    <div class="btns">
+      <a class="btn btn-gold" id="map-y" target="_blank" rel="noopener">📍 Yandex xarita</a>
+      <a class="btn btn-line" id="map-g" target="_blank" rel="noopener">Google xarita</a>
+    </div>
+  </section>
+
+  <section class="reveal" id="rsvp">
+    <div class="eyebrow">Javobingizni kutamiz</div>
+    <h2>Kelasizmi?</h2>
+    <p class="lead" id="rsvp-note"></p>
+    <form class="form" id="form" novalidate>
+      <label for="g-name">Ismingiz</label>
+      <input id="g-name" autocomplete="name" placeholder="Masalan: Akmal aka">
+      <label for="g-count">Necha kishi bo'lasiz?</label>
+      <select id="g-count">
+        <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option>
+      </select>
+      <div class="err" id="err"></div>
+      <div class="rsvp-btns">
+        <button type="button" class="btn btn-yes" data-a="yes">Kelaman</button>
+        <button type="button" class="btn btn-no" data-a="no">Kela olmayman</button>
+      </div>
+    </form>
+    <div class="thanks" id="thanks">
+      <svg class="divider"><use href="#orn"/></svg>
+      <p class="big" id="thanks-text"></p>
+      <div id="send-box" style="display:none;margin:14px 0"><p class="lead">Javobingiz egasiga yetishi uchun Telegramda <b>Start</b> tugmasini bosing:</p><a class="btn" id="send-link" target="_blank" rel="noopener">Javobni yuborish →</a></div>
+      <div class="promo">
+        <b>Sizning ham marosimingiz bormi?</b>
+        <p>To'y, aqiqa, tug'ilgan kun... Shunday taklifnomani 2 daqiqada bepul yarating.</p>
+        <a class="btn" id="promo-link" target="_blank" rel="noopener">Taklifnoma yaratish →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="badge" id="badge">
+    <a id="badge-link" target="_blank" rel="noopener">✨ <span>O'zingiz ham shunday taklifnoma yarating — <b>bepul</b></span></a>
+    <small>2 daqiqada, Telegram bot orqali</small>
+  </footer>
+</div>
+
+<button id="music" aria-label="Musiqani yoqish yoki o'chirish" title="Musiqa">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+</button>
+
+<script>
+/* ====== TAKLIF: har buyurtmada faqat shu yerni o'zgartiring ====== */
+const TAKLIF = {"id": "qp3qu", "bot": "takllifnomauz_bot", "tur": "To'y", "qoldi": "To'ygacha qoldi", "kuyov": "Nosir", "kelin": "Guli", "sana": "2027-04-17T18:00:00+05:00", "matn": "Hurmatli mehmon! Farzandlarimiz Nosir va Gulining nikoh to'yi munosabati bilan sizni aziz mehmonimiz bo'lishga taklif etamiz.", "kimdan": "Halilovlar oilasi", "joy": "Alo toyxonasi", "manzil": "Toshkent shaxar olamzor tumani sebzorda", "koord": null, "dastur": [], "javobMuddati": "Iltimos, kelish-kelmasligingizni oldindan bildiring.", "telefon": "+998996597233", "whatsapp": "", "belgi": true, "botHavola": "https://t.me/takllifnomauz_bot?start=ref_qp3qu"};
+/* ================================================================ */
+
+const $ = id => document.getElementById(id);
+const OYLAR = ["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentyabr","oktyabr","noyabr","dekabr"];
+const HAFTA = ["Yakshanba","Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba"];
+const sana = new Date(TAKLIF.sana);
+const tk = new Date(sana.getTime() + 5*3600e3);   // Toshkent vaqtida ko'rsatish
+const dd = String(tk.getUTCDate()).padStart(2,"0"), mm = String(tk.getUTCMonth()+1).padStart(2,"0");
+
+$("c-names").textContent = TAKLIF.kelin ? TAKLIF.kuyov + " & " + TAKLIF.kelin : TAKLIF.kuyov;
+$("c-tur").textContent = TAKLIF.tur + " taklifnomasi"; $("c-left").textContent = TAKLIF.qoldi;
+if (!TAKLIF.kelin){ $("amp").style.display = "none"; $("n2").style.display = "none"; }
+if (TAKLIF.belgi === false) $("badge").style.display = "none";
+if (!TAKLIF.dastur || !TAKLIF.dastur.length) $("dastur-sec").style.display = "none";
+if (TAKLIF.telefon) $("rsvp-note").insertAdjacentHTML("afterend", `<p class="lead"><a href="tel:${TAKLIF.telefon}">📞 ${TAKLIF.telefon}</a></p>`);
+$("c-date").textContent = `${dd} · ${mm} · ${tk.getUTCFullYear()}`;
+$("n1").textContent = TAKLIF.kuyov; $("n2").textContent = TAKLIF.kelin;
+$("d-big").textContent = `${dd} · ${mm} · ${tk.getUTCFullYear()}`;
+$("greet").textContent = TAKLIF.matn; $("from").textContent = TAKLIF.kimdan;
+$("weekday").textContent = `${tk.getUTCDate()}-${OYLAR[tk.getUTCMonth()]}, ${HAFTA[tk.getUTCDay()]}`;
+$("venue").textContent = TAKLIF.joy; $("addr").textContent = TAKLIF.manzil;
+$("rsvp-note").textContent = TAKLIF.javobMuddati;
+const [lat,lon] = TAKLIF.koord || [null,null];
+const qtxt = encodeURIComponent(TAKLIF.joy + " " + TAKLIF.manzil);
+$("map-y").href = lat ? `https://yandex.uz/maps/?pt=${lon},${lat}&z=16&l=map` : `https://yandex.uz/maps/?text=${qtxt}`;
+$("map-g").href = lat ? `https://www.google.com/maps/search/?api=1&query=${lat},${lon}` : `https://www.google.com/maps/search/?api=1&query=${qtxt}`;
+$("badge-link").href = $("promo-link").href = TAKLIF.botHavola;
+$("timeline").innerHTML = TAKLIF.dastur.map(([t,a,b]) =>
+  `<div class="tl"><time>${t}</time><div><strong>${a}</strong><small>${b}</small></div></div>`).join("");
+
+/* Sanagacha qolgan vaqt */
+function tick(){
+  let s = Math.floor((sana - Date.now())/1000);
+  if (s <= 0){ $("count").outerHTML = '<p class="passed">Kun keldi! Xush kelibsiz 🤍</p>'; return; }
+  $("cd-d").textContent = Math.floor(s/86400);
+  $("cd-h").textContent = Math.floor(s%86400/3600);
+  $("cd-m").textContent = Math.floor(s%3600/60);
+  $("cd-s").textContent = s%60;
+  setTimeout(tick, 1000);
+}
+tick();
+
+/* Paydo bo'lish */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.15});
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+/* Musiqa: mualliflik huquqi muammosi bo'lmasligi uchun brauzerning o'zida sintez qilingan yumshoq kuy */
+let ctx, master, playing = false, timer;
+const NOTES = [0,4,7,12, 9,7,4,7, 5,9,12,16, 14,12,9,7];   // major pentatonik arpedjio
+function note(t, semi, dur, vol){
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.type = "sine"; o.frequency.value = 261.63 * Math.pow(2, semi/12);
+  g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t+.03); g.gain.exponentialRampToValueAtTime(.0001, t+dur);
+  o.connect(g); g.connect(master); o.start(t); o.stop(t+dur+.05);
+}
+function loop(){
+  const t0 = ctx.currentTime + .05, step = .42;
+  NOTES.forEach((n,i) => { note(t0+i*step, n, 1.8, .16); if (i%4===0) note(t0+i*step, n-12, 3.2, .1); });
+  timer = setTimeout(loop, NOTES.length*step*1000);
+}
+function startMusic(){
+  if (!ctx){
+    ctx = new (window.AudioContext||window.webkitAudioContext)();
+    master = ctx.createGain(); master.gain.value = .55;
+    const d = ctx.createDelay(); d.delayTime.value = .33; const fb = ctx.createGain(); fb.gain.value = .32;
+    master.connect(ctx.destination); master.connect(d); d.connect(fb); fb.connect(d); d.connect(ctx.destination);
+  }
+  ctx.resume(); playing = true; loop(); $("music").classList.add("on");
+}
+function stopMusic(){ playing = false; clearTimeout(timer); ctx && ctx.suspend(); $("music").classList.remove("on"); }
+$("music").onclick = () => playing ? stopMusic() : startMusic();
+
+$("open").onclick = () => {
+  $("cover").classList.add("gone"); document.body.classList.remove("locked");
+  try { startMusic(); } catch(e) {}
+};
+
+/* Javob */
+document.querySelectorAll("[data-a]").forEach(b => b.onclick = () => {
+  const ism = $("g-name").value.trim();
+  if (!ism){ $("err").textContent = "Iltimos, ismingizni yozing"; $("g-name").focus(); return; }
+  const kel = b.dataset.a === "yes", soni = $("g-count").value;
+  try { localStorage.setItem("rsvp", JSON.stringify({ism, kel, soni, vaqt: Date.now()})); } catch(e) {}
+  if (TAKLIF.id && TAKLIF.bot){
+    const nb = btoa(String.fromCharCode(...new TextEncoder().encode(ism.slice(0,18)))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+    const u = `https://t.me/${TAKLIF.bot}?start=r_${TAKLIF.id}_${kel?"y":"n"}_${soni.replace("+","")}_${nb}`;
+    $("send-link").href = u; $("send-box").style.display = "block"; window.open(u, "_blank");
+  }
+  $("form").style.display = "none";
+  $("thanks-text").textContent = kel ? `Rahmat, ${ism}! Sizni intizorlik bilan kutamiz.` : `Rahmat, ${ism}! Duolaringiz uchun minnatdormiz.`;
+  $("thanks").classList.add("show");
+});
+</script>
+</body>
+</html>
